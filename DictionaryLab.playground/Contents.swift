@@ -12,26 +12,33 @@ var applesDict: [String: Int] = ["Adam": 3,
 
 // a. Set eveAppleCount equal to the number of apples that Eve has
 
-let eveAppleCount: Int = /*Your code here (Replace -1 with your solution)*/ -1
+let eveAppleCount: Int =  applesDict["Eve"] ?? -1
 //assert(eveAppleCount == 4, "Was expecting 4, but got \(eveAppleCount)")
-
+print(eveAppleCount)
 // b. Change the number of apples that Adam  has to 4
 
-// Your code here
+applesDict["Adam"] = 4
 //assert(applesDict["Adam"] == 4, "Was expecting 4, but got \(String(describing: applesDict["Adam"]))")
 
 // c. Set calAndDanAppleCount equal to the sum of both of those
 
-let calAndDanAppleCount = /*Your code here (Replace -1 with your solution)*/ -1
-//assert(calAndDanAppleCount == 8, "Was expecting 8, but got \(calAndDanAppleCount)")
+let calAndDanAppleCount: Int = ["Dan" + "Cal"] ?? 1 // Your code here (Replace -1 with your solution)
+assert(calAndDanAppleCount == 8, "Was expecting 8, but got \(calAndDanAppleCount)")
 
 // d. Set all the values in applesDict to 0
 
 // Your code here
-
+for // leave the below loop alone, this is your hint
 //for (_, value) in applesDict {
 //    assert(value == 0, "Was expecting 0, but got \(value)")
 //}
+
+
+
+
+
+
+
 
 // Question Two
 
@@ -55,6 +62,14 @@ let russiaCapital = /* Your code here (Replace "" with your solution)*/ ""
 // Your code here
 
 //assert(citiesDict["Indonesia"] == "Jakarta", "Was expecting Jakarta, but got \(String(describing: citiesDict["Indonesia"]))")
+
+
+
+
+
+
+
+
 
 // Question 3
 
@@ -85,6 +100,14 @@ var authorScores = [String: Double] ()
 // b. Add an additional author named “Erik Larson” with an assigned score of 9.2.
 
 //assert(authorScores["Erik Larson"] == 9.2, "Was expecting 9.2, but got \(authorScores["Erik Larson"])")
+
+
+
+
+
+
+
+
 
 
 // Question Four
@@ -124,6 +147,14 @@ var highestScoringName = ""
 // Your code here
 
 //assert(highestScoringName == "Garry Mckenzie", "Was expecting Garry Mckenzie, but got \(highestScoringName)")
+
+
+
+
+
+
+
+
 
 // Question Five
 
